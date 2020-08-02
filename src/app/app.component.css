@@ -1,11 +1,16 @@
 div {
   padding: 3rem;
 }
-
-.navbar {
-  justify-content: space-between;
+mat-sidenav-container {
+  height: 100%;
 }
 
-span {
-  padding-right: 1rem;
+mat-sidenav,
+mat-sidenav-content {
+  padding: 16px;
+}
+
+mat-sidenav {
+  background-color: lightcoral;
+  width: 200px;
 }

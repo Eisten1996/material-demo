@@ -1,8 +1,29 @@
-<mat-toolbar color="primary" class="navbar">
-  <div>CodeEvolution</div>
-  <div>
-    <span>Home</span>
-    <span>About</span>
-    <span>Services</span>
-  </div>
-</mat-toolbar>
+<mat-sidenav-container>
+  <!-- <mat-sidenav mode="over" [(opened)]="opened">SideNav</mat-sidenav> -->
+  <!-- <mat-sidenav mode="push" [(opened)]="opened">SideNav</mat-sidenav> -->
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    (opened)="log('opened')"
+    (closed)="log('closed')"
+    [(opened)]="opened"
+  >
+    SideNav
+  </mat-sidenav>
+  <mat-sidenav-content>
+    Main
+    <!-- <button (click)="opened = !opened">Toggle Opened</button> -->
+    <button (click)="opened = !opened" mat-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <button *ngIf="!opened" (click)="sidenav.open()" mat-button>
+      <mat-icon>menu_open</mat-icon>
+    </button>
+    <button *ngIf="opened" (click)="sidenav.close()" mat-button>
+      <mat-icon>close</mat-icon>
+    </button>
+    <button (click)="sidenav.toggle()" mat-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
