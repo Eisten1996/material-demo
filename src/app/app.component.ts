@@ -7,7 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'material-demo';
-  logChange(index) {
-    console.log(index);
-  }
 }
