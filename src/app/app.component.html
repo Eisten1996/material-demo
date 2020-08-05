@@ -1,19 +1,9 @@
 <div>
-  <button
-    mat-raised-button
-    matTooltip="Welcome to Dipper"
-    matTooltipPosition="after"
-  >
-    Hello
+  <!-- <button mat-button (click)="openSnackBar('Item Deleted','Dismis')"> -->
+  <button mat-button (click)="openSnackBar('Item Deleted', 'Undo')">
+    Delete
   </button>
-  <br />
-  <button
-    mat-raised-button
-    matTooltip="Welcome to Dipper"
-    matTooltipPosition="before"
-    matTooltipShowDelay="2000"
-    matTooltipHideDelay="2000"
-  >
-    Hello
+  <button mat-button (click)="openCustomSnackBar()">
+    Show componen SnackBar
   </button>
 </div>
