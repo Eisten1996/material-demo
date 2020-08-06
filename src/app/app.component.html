@@ -1,4 +1,11 @@
 <div>
+  <mat-form-field>
+    <input
+      (keyup)="applyFilter($event.target.value)"
+      matInput
+      placeholder="filter"
+    />
+  </mat-form-field>
   <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <!-- Position Column -->
     <ng-container matColumnDef="position">
