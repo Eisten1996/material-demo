@@ -1,7 +1,15 @@
 div {
-  padding: 3rem;
+  padding: 1rem;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid maroon;
+  box-sizing: border-box;
+  size: 100px;
 }
 
-table {
-  width: 100%;
+.container {
+  height: 400px;
 }
