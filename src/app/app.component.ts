@@ -29,4 +29,7 @@ export class AppComponent {
   title = 'material-demo';
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+  logData(row) {
+    console.log(row);
+  }
 }
